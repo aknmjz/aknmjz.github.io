@@ -1,0 +1,13 @@
+html {
+    background-color: lightblue;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
