@@ -1,4 +1,3 @@
-
 let h1 = document.querySelector("h1");
 if (localStorage.getItem("name")) {
   let storedName = localStorage.getItem("name");

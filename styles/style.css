@@ -5,9 +5,57 @@ html {
 h1,
 p {
     text-align: center;
+    margin: 50px;
+    font-size: 42px;
+}
+
+p {
+    font-size: large;
+}
+
+h1::first-letter{
+    font-size: 64px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+p{
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 button {
     display: block;
+    width: 10%;
+    height: 40px;
     margin: 0 auto;
+    background-color: dodgerblue;
+    background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  );
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.8),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6), 3px 3px 5px rgba(0,0,0,0.8);
+}
+
+button:hover {
+    background: rgb(86, 170, 255);
+}
+
+button:active{
+    background: rgb(0, 100, 201);
 }
